@@ -14,7 +14,7 @@ class Product extends Component{
 					<ProductConsumer>
 						{value => (
 							<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
-								<Link to to="/details">
+								<Link to="/details">
 									<img src={img} alt="product" className="card-img-top" />
 								</Link>
 								<button 
