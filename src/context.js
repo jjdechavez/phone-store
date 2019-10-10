@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {storeProducts, detailProduct} from './data';
 
-// dapat ito nakalgay top component which is sa index.js
+// Must import to the top component on index.js
 const ProductContext = React.createContext();
 
 // Provider - provide the information for our application
@@ -43,6 +43,16 @@ class ProductProvider extends Component{
 			return { detailProduct: product };
 		});
 	}
+
+	sortedData = () => {
+		const sortDate = this.state.products.sort((a,b) => {
+			if (new Date(a.released) > new Date(b.released)) return -1;
+			else if (new Date(b.released) > new Date(a.released)) return 1;
+			return 0;
+		});
+		return sortDate;
+	}
+	
 	addToCart = (id) => {
 		let tempProducts = [...this.state.products];
 		const index = tempProducts.indexOf(this.getItem(id));
@@ -110,7 +120,6 @@ class ProductProvider extends Component{
 				this.addTotals();
 			});
 		}
-
 	}
 
 	removeItem = id => {
@@ -161,10 +170,11 @@ class ProductProvider extends Component{
 	}
 	
 	render() {
+		// console.log(this.sortedData);
 		return(
 			<ProductContext.Provider 
 				value={{
-						// products: this.state.products - pwde to, may ibang way using spread operator
+						// products: this.state.products or below ex append all state
 						...this.state,
 						handleDetail: this.handleDetail,
 						addToCart: this.addToCart,
@@ -182,7 +192,7 @@ class ProductProvider extends Component{
 	}
 }
 
-// Consumer - para ipasa ang mga props
+// Consumer - to pass data props
 const ProductConsumer = ProductContext.Consumer;
 
 export {ProductProvider, ProductConsumer};

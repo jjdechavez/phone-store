@@ -1,20 +1,25 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.button `
-    text-transform: capitalize;
+    display: block;
     font-size: 1.4rem;
-    background: transparent;
-    border: 0.05rem solid var(--lightBlue);
-    border-color: ${props => props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-    color: ${prop => prop.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-    border-radius: 0.5rem;
+    text-decoration: none;
+    background: ${props => props.cart ? "var(--mainWhite)" : "var(--secDark)"};
+    border: 2px solid var(--secDark);
+    border-color: ${props => props.cart ? "var(--mainGray)" : "var(--secDark)"};
+    color: ${props => props.cart ? "var(--secDark)" : "var(--mainWhite)"};
     padding: 0.2rem 0.5rem;
     cursor: pointer;
     margin: 0.2rem 0.5rem 0.2rem 0;
+
+    background-image: linear-gradient(to right, ${props => props.cart ? "var(--secDark)" : null} 50%, transparent 50%);
+    background-position: 100% 0%;
+    background-size: 200% 100%;
+
     transition: all 0.5s ease-in-out;
     &:hover{
-        background: ${prop => prop.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-        color: var(--mainBlue);
+        color: ${props => props.cart ? "var(--mainWhite)" : "var(--mainWhite)"};
+        background-position: 0% 50%;
     }
     &:focus{
         outline: none;

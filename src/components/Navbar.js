@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
 import styled from 'styled-components';
-import {ButtonContainer} from './Button';
 
 class Navbar extends Component{
 	render() {
@@ -11,36 +10,46 @@ class Navbar extends Component{
 				<Link to="/">
 					<img src={logo} alt="store" className="navbar-brand"/>
 				</Link>
-				<ul className="navbar-nav align-items-center">
-					<li className="nav-item ml-5">
-						<Link to="/" className="nav-link">
-							Products
-						</Link>
-					</li>
-				</ul>
-				<Link to="/cart" className="ml-auto">
-					<ButtonContainer>
-						<span className="mr-2">
+				<div className="ml-auto">
+					<Link to="/">
+						<span className="p-3 cart-icon" style={{"fontSize": "1.3rem"}}>
+							<i className="fa fa-shopping-bag"></i>
+						</span>
+					</Link>
+					<Link to="/cart">
+						<span className="p-3 cart-icon" style={{"fontSize": "1.3rem"}}>
 							<i className="fa fa-cart-plus"></i>
 						</span>
-						my cart
-					</ButtonContainer>
-				</Link>
+					</Link>
+				</div>
 			</NavWrapper>
 		);
 	}
 }
 
 const NavWrapper = styled.nav`
-	background: var(--mainBlue);
+// background: #1998c4 !important;
+// position: relative;
+// width: 100%;
+// 	&::before {
+// 		content: "";
+// 		position: absolute;
+// 		left: 0;
+// 		bottom: 0;
+// 		right: 0;
+// 		top: 0;
+// 		width: 80%;
+// 		border-bottom: 2px solid black;
+// 	}
 	.navlink{
 		color: var(--mainWhite) !important;
 		font-size: 1.3rem;
 		text-transform : capitalize;
 	}
+	.cart-icon {
+		color: var(--mainBlack) !important;
+	}
 `;
-
-
 
 
 export default Navbar;
