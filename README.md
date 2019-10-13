@@ -1,4 +1,4 @@
-This project was about phone store with static data. Where user can buy phones using Paypal
+This project was about phone store with static api. Where user can buy phones using Paypal
 
 ## Tools / Dependencies used:
 1. React
