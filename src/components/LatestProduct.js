@@ -5,14 +5,15 @@ import PropTypes from 'prop-types';
 
 class LatestProduct extends Component {
   render() {
-    const {id , title, hero} = this.props.product;
+    const {id , title, hero:{regular, mobile}} = this.props.product;
 
     return (
       <ProductConsumer>
         {latestProduct => (
-          <div className="col-12 col-md-6 hero-img" onClick={() => latestProduct.handleDetail(id)}>
+          <div className="col-md-6 col-sm-12 hero-img" onClick={() => latestProduct.handleDetail(id)}>
             <Link to="/details">
-              <img src={hero} alt=""/>
+              <img className="img-fluid d-md-none" src={mobile} alt=""/>
+              <img className="mg-fluid d-none d-md-block" src={regular} alt=""/>
             </Link>
             <div className="mt-2">
               <Link to="/details">

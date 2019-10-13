@@ -13,7 +13,10 @@ export const storeProducts = [
       battery: "4035"
     },
     brand: "img/brands/realme.svg",
-    hero: "img/hero/realme5.jpg",
+    hero: {
+      regular: "img/hero/realme5.jpg",
+      mobile: "img/hero/realme5-mobile.jpg"
+    },
     released: "August 1, 2019",
     inCart: false,
     count: 0,
@@ -33,7 +36,10 @@ export const storeProducts = [
       battery: "3969"
     },
     brand: "img/brands/apple.svg",
-    hero: "img/hero/iphone11.jpg",
+    hero: {
+      regular: "img/hero/iphone11.jpg",
+      mobile: "img/hero/iphone11-mobile.jpg",
+    },
     released: "October 1, 2019",
     inCart: false,
     count: 0,
@@ -53,7 +59,10 @@ export const storeProducts = [
       battery: "4230"
     },
     brand: "img/brands/oppo.svg",
-    hero: "img/hero/oppoa5.jpg",
+    hero: {
+      regular: "img/hero/oppoa5.jpg",
+      mobile: "img/hero/oppoa5-mobile.jpg",
+    },
     released: "April 1, 2019",
     inCart: false,
     count: 0,
@@ -73,7 +82,10 @@ export const storeProducts = [
       battery: "6000"
     },
     brand: "img/brands/asus.svg",
-    hero: "img/hero/rogII.jpg",
+    hero: {
+      regular: "img/hero/rogII.jpg",
+      mobile: "img/hero/rogII-mobile.jpg",
+    },
     released: "August 1, 2019",
     inCart: false,
     count: 0,
@@ -93,7 +105,10 @@ export const storeProducts = [
       battery: "4000"
     },
     brand: "img/brands/huawei.svg",
-    hero: "img/hero/y9.jpg",
+    hero: {
+      regular: "img/hero/y9.jpg",
+      mobile: "img/hero/y9-mobile.jpg",
+    },
     released: "September 1, 2019",
     inCart: false,
     count: 0,
@@ -113,7 +128,10 @@ export const storeProducts = [
       battery: "4500"
     },
     brand: "img/brands/xiaomi.svg",
-    hero: "img/hero/redmi.jpg",
+    hero: {
+      regular: "img/hero/redmi.jpg",
+      mobile: "img/hero/redmi-mobile.jpg",
+    },
     released: "August 1, 2019",
     inCart: false,
     count: 0,
@@ -133,7 +151,10 @@ export const storeProducts = [
       battery: "3400"
     },
     brand: "img/brands/samsung.svg",
-    hero: "img/hero/s10.jpg",
+    hero: {
+      regular: "img/hero/s10.jpg",
+      mobile: "img/hero/s10-mobile.jpg",
+    },
     released: "March 1, 2019",
     inCart: false,
     count: 0,
@@ -153,7 +174,10 @@ export const storeProducts = [
       battery: "4000"
     },
     brand: "img/brands/vivo.svg",
-    hero: "img/hero/v15.jpg",
+    hero: {
+      regular: "img/hero/v15.jpg",
+      mobile: "img/hero/v15-mobile.jpg",
+    },
     released: "March 1, 2019",
     inCart: false,
     count: 0,

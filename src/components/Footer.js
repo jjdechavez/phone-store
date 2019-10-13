@@ -7,9 +7,8 @@ function Footer() {
         <div className="row">
           <div className="col-12 col-lg-6">
             <address>
-              <strong className="h3 font-weight-normal">Phone Chicken</strong> <br />
-              1234 Sample Street <br />
-              Philippines, Example 0987
+              <strong className="h3 font-weight-normal">MR.CHICKEN</strong> <br />
+              4234 Sakura Street Philippines, Agoncillo<br />
               Phone: (043) 332-7889
             </address>
           </div>

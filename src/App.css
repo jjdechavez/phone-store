@@ -58,35 +58,33 @@ a {
 
 .promotions {
   background-color: #333;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: .90rem;
 }
 
 .text-clipped {
   padding: 1px;
 }
 
-/* .carousel {
-  z-index: 0;
+/* logo */
+.head-title {
+  position: relative;
+  font-style: italic;
+  text-decoration: none;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.logo-title {
+  color: #E00D0D;
+  font-weight: bold;
+}
+
+.logo-sub {
   position: absolute;
-  top: 80%;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  opacity: 1;
+  top: 50%;
+  left: 10%;
+  font-size: .75rem;
+  color: #1C95CC;
 }
-
-.carousel-control-prev {
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
-}
-.carousel-control-next {
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
-} */
 
 /* brands */
 section {
@@ -109,7 +107,7 @@ img {
   opacity: 1;
 }
 
-/* women collections */
+/* latest item */
 .hero-img {
   /* height: 400px; */
   padding: 15px;
@@ -181,7 +179,7 @@ img {
   z-index: -1;
   margin: -2px; /*thic of border*/
   border-radius: inherit;
-  background: linear-gradient(to bottom, #23d5e3, #9149b9);
+  background: linear-gradient(to bottom, #1C95CC, #E00D0D);
 }
 
 .our-services-icon i {
@@ -226,7 +224,7 @@ footer {
   bottom: 0;
   width: 50%;
   height: 1px;
-  background: linear-gradient(to left, #23d5e3, #9149b9);
+  background: linear-gradient(to left, #1C95CC, #E00D0D);
 }
 
 .footer-list {
@@ -263,7 +261,7 @@ footer {
 }
 
 .heading-bg {
-  background: linear-gradient(to left, rgba(35,213,227,0.7), rgba(145,73,185,0.1));
+  background: linear-gradient(to left, rgba(28,149,204,0.75), rgba(224,13,13,0.40));
   height: 30vh;
 }
 
@@ -300,6 +298,12 @@ footer {
 
 .mobile-icon {
   font-size: 3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .promotions {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

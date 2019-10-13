@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../Phonelogo.svg';
 import styled from 'styled-components';
 
 class Navbar extends Component{
 	render() {
 		return(
 			<NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-				<Link to="/">
-					<img src={logo} alt="store" className="navbar-brand"/>
+				<Link to="/" className="d-flex align-items-center">
+					<img src={logo} alt="store" width="50" height="50" class="d-inline-block align-top" className="navbar-brand"/>
+					<span className="head-title d-flex flex-column">
+						<p className="logo-title">MR.CHICKEN</p>
+						<span className="logo-sub text-center">PHONE SHOP</span>
+					</span>
 				</Link>
 				<div className="ml-auto">
 					<Link to="/">

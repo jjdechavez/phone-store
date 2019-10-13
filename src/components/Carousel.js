@@ -1,6 +1,4 @@
 import React from 'react';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
 
 function Carousel() {
   return(
@@ -15,20 +13,20 @@ function Carousel() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/carousel-img-1-mobile.jpeg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/carousel-img-1.jpeg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-3-mobile.jpg" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-3.jpg" alt=""/>
             </a>
           </div>
           <div className="carousel-item">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/carousel-img-2-mobile.jpeg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/carousel-img-1.jpeg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/realme-mobile.jpg" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/realme.jpg" alt=""/>
             </a>
           </div>
           <div className="carousel-item">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/carousel-img-3-mobile.jpeg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/carousel-img-3.jpeg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-2-mobile.jpg" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-2.jpg" alt=""/>
             </a>
           </div>
         </div>

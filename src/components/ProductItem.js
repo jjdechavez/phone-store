@@ -11,7 +11,7 @@ class ProductItem extends Component {
           <div className="text-center product-container">
             <ProductConsumer>
               {productItem => (
-                <div className="col-12 col-lg-12 col-sm-6 col-md-3 mb-3">
+                <div className="mb-3">
                   <div className="product-img mb-3" onClick={() => productItem.handleDetail(id)}>
                     <Link to="/details" className="nav-link">
                       <img className="product-item-img" src={img} alt="product"/>
