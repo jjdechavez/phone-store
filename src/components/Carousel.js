@@ -13,20 +13,20 @@ function Carousel() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-3-mobile.jpg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-3.jpg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-3-mobile.webp" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-3.webp" alt=""/>
             </a>
           </div>
           <div className="carousel-item">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/realme-mobile.jpg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/realme.jpg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/realme-mobile.webp" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/realme.webp" alt=""/>
             </a>
           </div>
           <div className="carousel-item">
             <a href="#test">
-              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-2-mobile.jpg" alt=""/>
-              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-2.jpg" alt=""/>
+              <img className="img-fluid d-md-none" src="./img/carousel/Carousel-2-mobile.webp" alt=""/>
+              <img className="img-fluid d-none d-md-block" src="./img/carousel/Carousel-2.webp" alt=""/>
             </a>
           </div>
         </div>
