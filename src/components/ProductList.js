@@ -25,13 +25,7 @@ class ProductList extends Component{
 						<div className="row align-items-center text-center">
 							<ProductConsumer>
 								{brandProduct => {
-									return brandProduct.products.map((logo,index) => {
-										let brand;
-										if (index < 6) {
-											brand = <Brands key={logo.id} brand={logo.brand} />
-										}
-										return brand;
-									});
+									return brandProduct.products.map((logo,index) => index < 6 ? <Brands key={logo.id} brand={logo.brand} /> : null);
 								}}
 							</ProductConsumer>
 						</div>
@@ -43,19 +37,8 @@ class ProductList extends Component{
 						<div className="row">
 							<ProductConsumer>
 								{latestProduct => {
-									const sortDate = latestProduct.products.sort(function(a,b){
-										let dateA = new Date(a.released);
-										let dateB = new Date(b.released);
-										return dateB - dateA;
-									});
-
-									return sortDate.map((product, index) => {
-										let latest;
-										if(index < 4) {
-											latest = <LatestProduct key={product.id} product={product} />
-										}
-										return latest;
-									});
+									return latestProduct.products.sort((a,b) => new Date(b.released) - new Date(a.released))
+													.map((latest, index) => index < 4 ? <LatestProduct key={latest.id} latest={latest} /> : null);
 								}}
 							</ProductConsumer>
 						</div>
@@ -66,9 +49,7 @@ class ProductList extends Component{
 					<div className="row d-flex justify-content-around">
 						<ProductConsumer>
 							{productlist => {
-								return productlist.products.map(product => {	
-									return <ProductItem key={product.id} product={product} />	
-								});
+								return productlist.products.map(product => <ProductItem key={product.id} product={product} />	);
 							}}
 						</ProductConsumer>				
 					</div>

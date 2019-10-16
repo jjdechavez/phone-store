@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 class LatestProduct extends Component {
   render() {
-    const {id , title, hero:{regular, mobile}} = this.props.product;
+    const {id , title, hero:{regular, mobile}} = this.props.latest;
 
     return (
       <ProductConsumer>
