@@ -8,7 +8,7 @@ class Navbar extends Component{
 		return(
 			<NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
 				<Link to="/" className="d-flex align-items-center">
-					<img src={logo} alt="store" width="50" height="50" class="d-inline-block align-top" className="navbar-brand"/>
+					<img src={logo} alt="store" width="50" height="50" className="d-inline-block align-top navbar-brand"/>
 					<span className="head-title d-flex flex-column">
 						<p className="logo-title">MR.CHICKEN</p>
 						<span className="logo-sub text-center">PHONE SHOP</span>

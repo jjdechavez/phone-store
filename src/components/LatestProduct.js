@@ -30,10 +30,11 @@ class LatestProduct extends Component {
 }
 
 LatestProduct.propTypes = {
-	product: PropTypes.shape({
+	latest: PropTypes.shape({
 		id: PropTypes.number,
 		title: PropTypes.string,
-    hero: PropTypes.string,
+    regular: PropTypes.string,
+    mobile: PropTypes.string
 	}).isRequired
 };
 
